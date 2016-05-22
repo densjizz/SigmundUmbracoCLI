@@ -1,0 +1,6 @@
+C:\Workspace\SigmundUmbracoCLI\SigmundUmbracoCLI\bin\Debug\sig.exe.config
+C:\Workspace\SigmundUmbracoCLI\SigmundUmbracoCLI\bin\Debug\sig.exe
+C:\Workspace\SigmundUmbracoCLI\SigmundUmbracoCLI\bin\Debug\sig.pdb
+C:\Workspace\SigmundUmbracoCLI\SigmundUmbracoCLI\obj\Debug\SigmundUmbracoCLI.csprojResolveAssemblyReference.cache
+C:\Workspace\SigmundUmbracoCLI\SigmundUmbracoCLI\obj\Debug\sig.exe
+C:\Workspace\SigmundUmbracoCLI\SigmundUmbracoCLI\obj\Debug\sig.pdb

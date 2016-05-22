@@ -1,0 +1,4 @@
+C:\Workspace\SigmundUmbracoCLI\SigmundCommand\bin\Debug\SigmundCommand.dll
+C:\Workspace\SigmundUmbracoCLI\SigmundCommand\bin\Debug\SigmundCommand.pdb
+C:\Workspace\SigmundUmbracoCLI\SigmundCommand\obj\Debug\SigmundCommand.dll
+C:\Workspace\SigmundUmbracoCLI\SigmundCommand\obj\Debug\SigmundCommand.pdb
