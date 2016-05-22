@@ -10,22 +10,22 @@ namespace SigmundCommand
     public class Command
     {
         public string Name { get; set; }
+        public string Alias { get; set; }
         public string Description { get; set; }
         public List<CommandOption> Options { get; set; }
-        public Func<string[], string> ExecuteCmd;
 
         public void PrintHelp() {
             
             Console.ResetColor();
-            Console.Write("Sig " + Name + " ");
+            Console.Write("sig " + Name);
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("<value> ");
+            Console.Write(" <value> ");
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Write("<options...> \n\r");
             Console.ResetColor();
 
             
-            Console.WriteLine("  " + Description);
+            Console.WriteLine("  alias " + Alias + " " + Description);
 
             foreach (CommandOption o in Options) {
                 o.PrintHelp();
@@ -34,7 +34,11 @@ namespace SigmundCommand
         }
 
         public virtual void Execute(string[] args) {
-            ExecuteCmd(args);
+            
+        }
+
+        public virtual void Undo(string[] args) {
+
         }
 
     }

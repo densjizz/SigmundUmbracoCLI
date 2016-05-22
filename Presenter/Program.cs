@@ -10,21 +10,38 @@ namespace Presenter
 {
     public class Program
     {
-        public List<Command> Commands;
+        public static List<Command> Commands = new List<Command>();
 
         static void Main(string[] args)
         {
-            //Commands = LoadCommandsFromJSon();
-            var t = new Command() { Name = "Some Command", Description = "description goes here", Options = new List<CommandOption>() { new CommandOption { Callname = "caca", Type = "String", Description = "some command option", Alias = "o", DefaultValue ="Fun" } } };
-            t.ExecuteCmd = DoSomething;
+            InitiateCommands();
 
-            t.Execute(args);
+            ExecuteCommand(args);
+
+            
         }
 
-        private static string DoSomething(string[] arg)
+        private static void ExecuteCommand(string[] args)
         {
-            Console.WriteLine("function delegates are working");
-            return "";
+            if (args == null || args.Count() == 0)
+            {
+                Commands.Where(x => x.Name == "help").FirstOrDefault().Execute(args);
+            }
+            else {
+                var cmd = Commands.Where(x => x.Name.ToLower() == args[0]).FirstOrDefault();
+                if (cmd != null) cmd.Execute(args);
+            }
+            
+
+
+        }
+
+        private static void InitiateCommands()
+        {
+            
+            //var helpCommand = new HelpCommand() { Name = "Help", Description = "List all available commands.", Options = new List<CommandOption>() { new CommandOption { Callname = "caca", Type = "String", Description = "some command option", Alias = "o", DefaultValue = "Fun" } } };
+            var helpCommand = new HelpCommand() { Name = "help", Alias = "h", Description = "List all available commands.", Options = new List<CommandOption>() {  }, Commands = Commands };
+            Commands.Add(helpCommand);
         }
     }
 }

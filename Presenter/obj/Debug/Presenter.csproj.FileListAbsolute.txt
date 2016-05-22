@@ -6,3 +6,11 @@ C:\Workspace\SigmundUmbracoCLI\Presenter\bin\Debug\sig.exe
 C:\Workspace\SigmundUmbracoCLI\Presenter\bin\Debug\sig.pdb
 C:\Workspace\SigmundUmbracoCLI\Presenter\obj\Debug\sig.exe
 C:\Workspace\SigmundUmbracoCLI\Presenter\obj\Debug\sig.pdb
+D:\workspace\SigmundCLI\SigmundUmbracoCLI\Presenter\bin\Debug\sig.exe.config
+D:\workspace\SigmundCLI\SigmundUmbracoCLI\Presenter\bin\Debug\sig.exe
+D:\workspace\SigmundCLI\SigmundUmbracoCLI\Presenter\bin\Debug\sig.pdb
+D:\workspace\SigmundCLI\SigmundUmbracoCLI\Presenter\bin\Debug\SigmundCommand.dll
+D:\workspace\SigmundCLI\SigmundUmbracoCLI\Presenter\bin\Debug\SigmundCommand.pdb
+D:\workspace\SigmundCLI\SigmundUmbracoCLI\Presenter\obj\Debug\Presenter.csprojResolveAssemblyReference.cache
+D:\workspace\SigmundCLI\SigmundUmbracoCLI\Presenter\obj\Debug\sig.exe
+D:\workspace\SigmundCLI\SigmundUmbracoCLI\Presenter\obj\Debug\sig.pdb
