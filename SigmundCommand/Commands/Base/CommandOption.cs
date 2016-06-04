@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SigmundCommands
+namespace SigmundCommand.Commands.Base
 {
     public class CommandOption
     {
@@ -18,7 +18,7 @@ namespace SigmundCommands
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.Write(Description);
             Console.WriteLine(" alias: -" + Alias);
-            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Green;
         }
     }
 }

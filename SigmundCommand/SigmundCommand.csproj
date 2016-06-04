@@ -40,11 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Command.cs" />
-    <Compile Include="CommandOption.cs" />
-    <Compile Include="HelpCommand.cs" />
+    <Compile Include="Commands\Base\Argument.cs" />
+    <Compile Include="Commands\Base\Command.cs" />
+    <Compile Include="CommandController.cs" />
+    <Compile Include="Commands\Base\CommandOption.cs" />
+    <Compile Include="Commands\Base\Requirement.cs" />
+    <Compile Include="Commands\Base\TypeRequirement.cs" />
+    <Compile Include="Commands\Help.cs" />
+    <Compile Include="Commands\Multiply.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
