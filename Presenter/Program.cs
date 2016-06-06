@@ -12,7 +12,7 @@ namespace Presenter
     public class Program
     {
 
-        public static CommandController cmdController;
+        public static CommandRegistry cmdController;
 
         static void Main(string[] args)
         {
@@ -28,13 +28,11 @@ namespace Presenter
 
         private static void InitiateCommands()
         {
-            cmdController = new CommandController();
+            cmdController = new CommandRegistry();
 
-            cmdController.Commands.Add(new Multiply() { Name = "multiply", Alias= "m", Description = "Multiplies two numbers and return result" });
-
-
-            var help = new Help() { Name = "help", Alias = "h", Description = "List all available commands.", CmdController = cmdController };
-            cmdController.Commands.Add(help);
+            cmdController.Commands.Add(new Multiply());
+            
+            cmdController.Commands.Add(new Help(cmdController.Commands));
         }
     }
 }

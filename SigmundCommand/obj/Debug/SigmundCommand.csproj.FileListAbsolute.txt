@@ -7,3 +7,4 @@ D:\workspace\SigmundCLI\SigmundUmbracoCLI\SigmundCommand\bin\Debug\SigmundComman
 D:\workspace\SigmundCLI\SigmundUmbracoCLI\SigmundCommand\obj\Debug\SigmundCommand.csprojResolveAssemblyReference.cache
 D:\workspace\SigmundCLI\SigmundUmbracoCLI\SigmundCommand\obj\Debug\SigmundCommand.dll
 D:\workspace\SigmundCLI\SigmundUmbracoCLI\SigmundCommand\obj\Debug\SigmundCommand.pdb
+C:\Workspace\SigmundUmbracoCLI\SigmundCommand\obj\Debug\SigmundCommand.csprojResolveAssemblyReference.cache

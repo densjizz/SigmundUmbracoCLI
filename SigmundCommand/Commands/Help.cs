@@ -9,8 +9,16 @@ namespace SigmundCommand
 {
     public class Help : Command
     {
-        public CommandController CmdController;
+        public CommandRegistry CmdController;
+        private List<Command> commands;
 
+        public Help(List<Command> commands)
+        {
+            this.commands = commands;
+            Name = "help";
+            Alias = "h";
+            Description = "lists all available commands";
+        }
 
         public override void InitializeRequirements()
         {

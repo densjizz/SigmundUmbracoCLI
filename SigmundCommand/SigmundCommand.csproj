@@ -40,9 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandParameter.cs" />
+    <Compile Include="CommandRegistry.cs" />
     <Compile Include="Commands\Base\Argument.cs" />
     <Compile Include="Commands\Base\Command.cs" />
-    <Compile Include="CommandController.cs" />
     <Compile Include="Commands\Base\CommandOption.cs" />
     <Compile Include="Commands\Base\Requirement.cs" />
     <Compile Include="Commands\Base\TypeRequirement.cs" />

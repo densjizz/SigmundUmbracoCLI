@@ -11,6 +11,12 @@ namespace SigmundCommand.Commands
     {
 
 
+        public Multiply() {
+            Name = "multiply";
+            Alias = "m";
+            Description = "Multiplies two numbers and return result";
+        }
+
 
         public override void InitializeRequirements()
         {
