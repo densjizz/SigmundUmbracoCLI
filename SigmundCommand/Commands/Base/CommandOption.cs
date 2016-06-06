@@ -13,11 +13,10 @@ namespace SigmundCommand.Commands.Base
         public void PrintHelp()
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("--");
-            Console.WriteLine(Callname + "("+ Type +") (Default:" + DefaultValue + ")");
+            Console.Write("  --");
+            Console.WriteLine(Callname + "("+ Type +") (Default:" + DefaultValue + ") " + Description);
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.Write(Description);
-            Console.WriteLine(" alias: -" + Alias);
+            Console.WriteLine("  aliases: -" + Alias);
             Console.ForegroundColor = ConsoleColor.Green;
         }
     }
