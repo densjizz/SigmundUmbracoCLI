@@ -27,20 +27,24 @@ namespace SigmundCommand.Commands.Base
             
             Console.Write("sig " + Name);
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(" <values> ");
+            foreach (Requirement r in Requirements) {
+                Console.Write(" <"+r.Name.ToLower()+"> ");
+            }
+            
+
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Write("<options...> \n\r");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("lias " + Alias);
-            Console.WriteLine("");
-            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(Description);
-
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("aliases: " + Alias);
             foreach (CommandOption o in Options) {
                 o.PrintHelp();
             }
+            Console.WriteLine("");
+            Console.WriteLine("");
             
         }
 

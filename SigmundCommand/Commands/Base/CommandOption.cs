@@ -14,7 +14,7 @@ namespace SigmundCommand.Commands.Base
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Write("--");
-            Console.WriteLine(Callname + "("+ Type +") (" + DefaultValue + ")");
+            Console.WriteLine(Callname + "("+ Type +") (Default:" + DefaultValue + ")");
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.Write(Description);
             Console.WriteLine(" alias: -" + Alias);
